@@ -1,0 +1,151 @@
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+
+  .neonText2 {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #5271ff,
+        0 0 82px #5271ff,
+        0 0 92px #5271ff,
+        0 0 102px #5271ff,
+        0 0 151px #5271ff;
+  }
+  .neondiv{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 2px 4px rgba(200, 230, 255, 0.5),
+    0 -2px 2px 3px rgba(200, 230, 255, 0.5) inset,
+    0 0 2px 10px rgba(100, 150, 255, 0.9),
+    0 0 2px 7px rgba(100, 150, 255, 1) inset,
+    0 0 12px 13px rgba(0, 50, 255, 0.9),
+    0 0 12px 11px rgba(0, 50, 255, 0.7) inset,
+    0 8px 30px 18px rgba(0, 0, 0, 0.8), 0 8px 25px 12px rgba(0, 0, 0, 0.7) inset; 
+  }
+
+  .neondiv2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 4px rgba(255, 200, 214, 0.5),
+      0 -2px 2px 3px rgba(255, 200, 216, 0.5) inset,
+      0 0 2px 10px rgba(255, 100, 113, 0.9),
+      0 0 2px 7px rgb(255, 100, 152) inset,
+      0 0 12px 13px rgba(255, 0, 34, 0.9),
+      0 0 12px 11px rgba(255, 0, 0, 0.7) inset,
+      0 8px 30px 18px rgba(0, 0, 0, 0.8), 0 8px 25px 12px rgba(0, 0, 0, 0.7) inset; 
+    }
+
+  .neonText3 {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #9506ce,
+      0 0 82px #9506ce,
+      0 0 92px #9506ce,
+      0 0 102px #9506ce,
+      0 0 151px #9506ce;
+  }
+
+  .marginb{
+      margin-bottom: 60px;
+  }
+  
+  h1 {
+    font-size: 4.2rem;
+    animation: flicker 1.5s infinite alternate;     
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  
+  /* Additional styling */
+    
+  h2 {
+   font-size: 1.8rem;
+  }
+  
+  @keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #5271ff,
+        0 0 80px #5271ff,
+        0 0 90px #5271ff,
+        0 0 100px #5271ff,
+        0 0 150px #5271ff;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #5271ff,
+      0 0 73px #5271ff,
+      0 0 80px #5271ff,
+      0 0 94px #5271ff,
+      0 0 140px #5271ff;
+  
+  }
+}
+
+  .container {
+    margin-top: 20vh;
+  }
+  
+  body {
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #010a01;
+  }  
+  
+  h1, h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
