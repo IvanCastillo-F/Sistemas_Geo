@@ -33,40 +33,41 @@
            zoom: 2
        }
 
-       function obtmarcadores(){
-           const markers =[{
-               name : "Mexico",
-               logitude: "-99.1276",
-               latitude: "19.427"
-           },
-           {
-               name : "Brasil",
-               logitude: "-47.9292",
-               latitude: "-15.7801"
-           },
-           {
-               name : "España",
-               logitude: "-3.70327",
-               latitude: "40.4167"
-           }
-        ]
-       }
+       function obtieneMarcadores(){
+            const markers = [
+                {
+                    name:"Mexico",
+                    longitude:"-99.1276",
+                    latitude:"19.427"
+                },
+                {
+                    name:"Brasil",
+                    longitude:"-47.9292",
+                    latitude:"-15.7801"
+                },
+                {
+                    name:"España",
+                    longitude:"-3.70327",
+                    latitude:"40.4167"
+                }
+            ]
 
-       function iniciaMapa(){
-          const map = new google.maps.Map(document.getElementById("mapa"), propiedades)
-          
-          const marcadores = obtmarcadores();
-
-          for(marcador of marcadores){
-              let marker = new google.maps.Marker({
-                  map:map,
-                  position: new google.LatLng(marcador.latitude, marcador.logitude),
-                  title: marcador.name
-              })
-          }
-
+            return markers;
         }
 
+        function iniciaMapa(){
+            const map = new google.maps.Map(document.getElementById("map"), propiedades);
+
+            const marcadores = obtieneMarcadores();
+
+            for(marcador of marcadores){
+                let marker = new google.maps.Marker({
+                    map : map,
+                    position: new google.maps.LatLng(marcador.latitude,marcador.longitude),
+                    title: marcador.name
+                });
+            }
+        }
     </script>
      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMrQgga-C5zCuZLTVk2MPVzX7naqKZXZU&callback=iniciaMapa" async defer></script>
 </body>
