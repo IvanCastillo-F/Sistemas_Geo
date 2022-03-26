@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700,300italic);
+
+body {
+    margin:0;
+  }
+  h3 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+ 
+  .wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      font-family: 'Lato', Arial, sans-serif;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+      background-size: 600% 100%;
+      animation: gradient 16s linear infinite;
+      animation-direction: alternate;
+  }
+  @keyframes gradient {
+      0% {background-position: 0%}
+      100% {background-position: 100%}
+  }
