@@ -92,5 +92,15 @@ function iniciaMapa(){
 
             });
 
+            var mapa6 = new google.maps.Map(document.getElementById('mapa6'),propiedades);
+
+            google.maps.event.addDomListener(mapa6, 'click', function(){
+                window.alert(' Se hizo click en el mapa');
+            });
+
+            var boton = document.getElementById('btnCentrar');
+            google.maps.event.addDomListener(boton, 'click', function(){
+                 mapa6.panTo(coordenadas);
+            });
 
 }
