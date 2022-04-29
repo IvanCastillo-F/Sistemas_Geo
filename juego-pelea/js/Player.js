@@ -143,7 +143,7 @@ class Player extends Sprite{
                     this.framesMax = this.sprites.death.framesMax
                     this.framesCurrent = 0
                   }
-        break
+                break
         }
     }
     
